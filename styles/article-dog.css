@@ -1,0 +1,234 @@
+body, div, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:hover, a:focus, a:visited {
+    color: black;
+}
+.body {
+    height: 100vh;
+    width: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 980px) {
+.header {
+    height: 10vh;
+    box-shadow: 0 0 10px 1px #8681769f;
+    transition: 500ms;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background-color: white;
+}
+.header:hover {
+    box-shadow: 0 0 7px 1px #f8ab1b;
+    transition: 500ms;
+}
+.navigation {
+    height: 100%;
+}
+.header-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-menu-li {
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header-menu-li + .header-menu-li {
+    margin-left: 3%;  
+}
+.header-menu-li:hover {
+    text-shadow: 0 0 8px #f8ab1ba4;
+    transition: 500ms;
+}
+.header-menu-li:active, .header-menu-li:focus {
+    border-bottom: 1px solid #f8ab1ba4;
+    transition: none;
+}
+.main {
+    width: 100%;
+    background-color: #f88e02c7;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+.article-title {
+    height: 500px;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+.article-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto 0;
+    background-image: url("../img/picture1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+#akita {
+    background-image: url("../img/e881aa3e59df6650a093dd15e28deb9d.jpg");
+}
+#bigle {
+    background-image: url("../img/бигль.jpg");
+}
+#djek {
+    background-image: url("../img/джекс\ рассел.jpg");
+}
+#korgi {
+    background-image: url("../img/корги.jpg");
+}
+#golden {
+    background-image: url("../img/golden.jpg");
+}
+.about-dog li {
+    margin: 0;
+    padding: 10px 0px 10px 44px;
+    list-style: none;
+    background-image: url("../img/lapka.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+}
+.article-descriprion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    margin: auto 0;
+}
+.characteristic {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+.column{
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        height: 10vh;
+        box-shadow: 0 0 10px 1px #8681769f;
+        transition: 500ms;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        background-color: white;
+    }
+    .header:hover {
+        box-shadow: 0 0 7px 1px #f8ab1b;
+        transition: 500ms;
+    }
+    .navigation {
+        height: 100%;
+    }
+    .header-menu{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .header-menu-li {
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .header-menu-li + .header-menu-li {
+        margin-left: 3%;  
+    }
+    .header-menu-li:hover {
+        text-shadow: 0 0 8px #f8ab1ba4;
+        transition: 500ms;
+    }
+    .header-menu-li:active, .header-menu-li:focus {
+        border-bottom: 1px solid #f8ab1ba4;
+        transition: none;
+    }
+    .main {
+        width: 100%;
+        background-color: #f88e02c7;
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+    }
+    .article-title {
+        width: 80%;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        margin: 50px auto;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .article-image {
+        /*height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: auto 0;
+        background-image: url("../img/picture1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 30px;*/
+        display: none;
+    }
+    .dog-name {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about-dog li {
+        margin: 0;
+        padding: 10px 0px 10px 44px;
+        list-style: none;
+        background-image: url("../img/—Pngtree—animal\ paw\ print\ icon_5092683.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 40px;
+    }
+    .article-descriprion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60%;
+        margin: auto 0;
+        width: 80%;
+    }
+    .characteristic {
+        margin-top: 25px;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+    }
+    .column{
+        width: 80%;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,202 @@
+body, div, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 980px) {
+body {
+    height: 100vh;
+    background-image: url("../img/MainDog.png");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-color: #F8AC1B;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/CircleBack.png");
+    background-repeat: no-repeat;
+    display: flex;
+    animation-name: moveCircle;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveCircle {
+    from {
+        background-size: 10%;
+    }
+    to {
+        background-size: 30%;
+    }
+}
+
+.main-left {
+    width: 40%;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.main-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-title {
+    margin-top: 20%;
+    font-weight: 700;
+    font-size: 6em;
+}
+#main-title {
+    /*padding-top:6px;*/
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: 6px;
+    margin-top: -3%;
+    background: black;
+    animation-name: moveLine;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveLine {
+    from {
+        margin-left:-400px;
+    }
+    to {
+        float:left;
+    }
+}
+
+.description-div {
+    margin-top:5%;
+    width: 80%;
+    height: 13%;
+    background-color: rgb(255, 215, 128, 0.5);
+    display: flex;
+    align-items: center;
+    border-left: 5px solid black;
+}
+.main-description {
+
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 2%;
+
+}
+
+.select-test {
+    display: block;
+    width: 55%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.select-test:hover {
+    box-shadow: 1px 1px 10px rgb(143, 85, 64);
+    transition: 500ms;
+    color: #ffd890;
+}
+#select-list {
+    background-color: white;
+    color: black;
+    margin-top: -3%;
+    margin-bottom: 5%;
+}
+#select-list:active, #select-list:focus{
+    border: 1px solid black;
+    transition:none;
+}
+.select-test:active {
+    transition: none;
+    border: 1px solid #F8AC1B;
+}
+}
+@media screen and (max-width: 980px) {
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #F8AC1B;
+    }
+    .main-text {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("../img/mobiledog.png");
+        background-size: 30%;
+        background-position-y: 37%;
+        background-position-x: 90%;
+        background-repeat: no-repeat;
+    }
+    .main-title {
+        font-size: 4em;
+        justify-content: center;
+        background-image: url("../img/CircleBack.png");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position:top;
+        background-position-x:15%;
+        background-position-y: -20%;
+    }
+    #main-title {
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    .description-div {
+        background-color: rgb(255, 215, 128, 0.5);
+        border: 2px solid black;
+        border-style: dashed;
+        border-radius: 3px;
+        width: 80%;
+        height: 12vh;
+        margin: 0 auto;
+    }
+    #button-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        height: 30%;
+        justify-content: flex-end;
+    }
+    .select-test {
+        margin-bottom: 5%;
+        height: 20%;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        letter-spacing: 1px;
+        border-radius: 7px;
+        font-size: 1em;
+    }
+    #select-list {
+        background-color: white;
+        color: black;
+    }
+}
